@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Altitude",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Altitude Smart hotel"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://app8.rmscloud.com/*",
+                "https://app8.rmscloud.com/*"
+            ],
+            "js": ["js/content.js"]
+        }
+    ]
+}
