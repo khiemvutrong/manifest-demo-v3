@@ -8,7 +8,7 @@
         "tabs"
     ],
     "background": {
-        "service_worker": "js/background.js"
+        "service_worker": "dist/background.js"
     },
     "action": {
         "default_popup": "popup.html",
@@ -20,7 +20,7 @@
                 "http://app8.rmscloud.com/*",
                 "https://app8.rmscloud.com/*"
             ],
-            "js": ["js/content.js"]
+            "js": ["dist/content.js"]
         }
     ]
 }
